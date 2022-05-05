@@ -1,0 +1,96 @@
+@media screen and (max-width:700px){
+	header.header{
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+	background-color: white; 
+	height: 8%;
+	padding: 10px;
+	z-index: 30;
+    }
+    h1 {
+    	margin: 0;
+    	width: auto;
+	    height: auto;
+    }
+    .header__botones{
+    	display: grid;
+    	grid-template-columns: auto auto;
+    	justify-content: end;
+
+    }
+    .header__logo {
+    	
+    }
+    .header__boton-carrito, .header__boton-menu{
+    	margin: 8px;
+    }
+    header.header__logo, .header__boton-menu, .header__boton-carrito{
+    	width: 24PX;
+	    height: 24PX;
+	    background-color: white; 
+    }
+    .principal {
+	background-color: black; 
+	width: 100%;
+	height: 80%;
+	z-index: 10;
+	color: white; 
+
+    }
+    .portada-1{
+    	display: grid;
+    	grid-template-rows: 8% 70% 18%;
+    	padding: 20px;
+    	background-color: #ca4e4e;
+    	width: 100%;
+    	height: 74%;
+    }
+    .portada-1__seccion-1{
+    	display: grid;
+    	align-items: center;
+    	text-align: center;
+    	
+    }
+    .portada-1__seccion-2__imagen-celular {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: #f3f3f3;
+    }
+    .portada-1__seccion-3{
+
+    display: grid;
+    padding: 5px;
+    } 
+    .portada-1__seccion-3__botoncomprar {
+    	display: grid;
+    	align-items: center;
+    	justify-content: center;
+    }
+    .portada-1__seccion-3__botoncomprar div {
+    	display: grid;
+    	height: 47px;
+    	width: 126px;
+    	align-items: center;
+    	background-color: black;
+    	color: white;
+    	text-align: center;
+    	background-color: black;
+    	border-radius:12.5vw;
+
+    }
+    .portada-1__seccion-3__caracteristicas {
+        display: grid;
+        text-align: center;
+        padding: 10px;
+
+    }
+    .portada-1__seccion-3__caracteristicas h3 {
+        text-decoration: underline;
+    }
+
+
+       
+}
