@@ -6,15 +6,16 @@
   <link rel="icon" href="favicon/redax.png"/> <!-- cambiar icono -->
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/index.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- cambiar fuente -->
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet"> 
 </head> 
 <!-- responsive for smartphone -->
 <body>
 	<main>
 		<header class = "header">
 			<div class = "header__logo">  
-				<h1>Mobiles </h1>
+				<h1>Mobiles</h1>
 			</div>
 			<div class="header__botones">
 				<div class = "header__boton-carrito">
@@ -76,14 +77,15 @@
 			</div>
 			
 		</div>
-		<div class="seccion-catalogo">
+		<div class="encabezado-seccion-catalogo">
 			<h2>Accede a nuestro catálogo</h2>
 		</div>
 		<div class="catalogo">
-			<div class="catalogo__imagen">
+			<div class="catalogo__imagen-con-boton">
 				<img src="../imagenes/mostrar-catalogo.jpg">
-				<div class="catalogo__boton">
-				  <p>MIRAR CATÁLOGO</p>
+				<div class="catalogo__boton-contenedor">
+					<div class="catalogo__boton"><p>MIRAR CATÁLOGO</p></div>
+				  
 			  </div>
 			</div>
 			
@@ -92,7 +94,29 @@
 		</div>
 	</main>
 	<footer>
-		<op>Lorem	</op> 
+		<div class="footer-titulo">
+			<h2>Sobre nosotros</h2>
+		</div>
+		<div class="footer-icono-contenedor">
+			<div class="footer-icono">
+				<img src="../imagenes/icono-branch.svg">
+			</div>
+			
+		</div>
+		<div class="footer-texto">
+			<p>
+				Somos dos estudiantes de ingeniería de Sistemas y hemos diseñado esta página con fines académicos, a fin de presentar
+				un proyecto final para la materia le lógica y algoritmia. 
+		  </p>
+		  <p>Para el desarrollo de la página hemos utilizado HTML, CSS y Javascript</p>
+		</div>
+		<div class="footer-logo-universidad-contenedor">
+			<div class="footer-logo-universidad">
+				<img src="../imagenes/escudo-universidad.png">
+				
+			</div>
+			
+		</div>
 	</footer>
 	
 
