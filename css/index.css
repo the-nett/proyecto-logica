@@ -150,10 +150,7 @@
         grid-template-columns: 100%;
         align-items: end;
         justify-content: center;
-
         width: 100%;
-        
-        
     }
     .catalogo__imagen-con-boton img {
         object-fit: cover;
