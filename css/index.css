@@ -147,10 +147,10 @@
     .catalogo__imagen-con-boton {
         display: grid;
         grid-template-rows: 100%;
-        grid-template-columns: 100%;
         align-items: end;
         justify-content: center;
         width: 100%;
+        min-height: 35%;
     }
     .catalogo__imagen-con-boton img {
         object-fit: cover;
