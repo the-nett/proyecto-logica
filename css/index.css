@@ -145,14 +145,14 @@
     }
     .catalogo__imagen-con-boton {
         display: grid;
-        align-items: end;
+        align-items: center;
         min-height: 35%;
         justify-content: center;
     }
     .catalogo__imagen-con-boton img {
         object-fit: cover;
         z-index: 50;
-        position: absolute;
+        position: relative;
 
     }
 
@@ -177,7 +177,7 @@
         grid-template-rows: 100%;
         align-items: center;
         justify-content: center;
-        position: relative;
+        position: inherit;
         z-index: 60;
         padding: 5%;
 
@@ -188,13 +188,14 @@
         height: 47px;
         width: 126px;
         align-items: center;
-        background-color: black;
         color: white;
         text-align: center;
         background-color: black;
         border-radius:12.5vw;
-
         justify-content: center;
+        position: absolute;
+        z-index: 60;
+        margin: 52% 35% 5% 35%;
 
 
     }
