@@ -1,5 +1,5 @@
 
 function ventana_catalogo() {
-	window.open("http://htmlpreview.github.io/?../html/seccion-catalogo.html" , "ventana1");
+	window.open("https://htmlpreview.github.io/?https://github.com/the-nett/proyecto-logica/blob/masterhtml/seccion-catalogo.html" , "ventana1");
 }
 
