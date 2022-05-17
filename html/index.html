@@ -3,98 +3,67 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobiles</title>
-  <link rel="icon" href="favicon/redax.png"/> <!-- cambiar icono -->
+  <link rel="icon" href="../imagenes/icono-logo.jpg"/> <!-- cambiar icono -->
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <script src="../javascript/index.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet"> 
 </head> 
 <!-- responsive for smartphone -->
 <body>
-	<main>
-		<header class = "header">
-			<div class = "header__logo">  
-				<h1>Mobiles</h1>
-			</div>
-			<div class="header__botones">
-				<div class = "header__boton-carrito">
-					<img src="../imagenes/icono-carrito-de-compra.svg">
-			  </div>
-			  <div class = "header__boton-menu">
-				  <img src="../imagenes/icono-menu.svg">
-			  </div>
-			</div>
-		</header>
-		<div class="productos-destacados">
-			<h2>Productos destacados</h2>
-		</div>
-		<div class="portada-1">
-			<div class="portada-1__seccion-1">
-				<div class="portada-1__seccion-1__nombre-celular">
-					<h3>Nombre del celular</h3>
+	<header>
+			<nav>
+				<div class = "header-responsive">
+					<div class = "header__logo">  
+				    <img src="../imagenes/logo.jpg">
+			    </div>
+			    <div class="header__botones">
+				    <div class = "header__boton-carrito">
+					    <img src="../imagenes/icono-carrito-de-compra.svg">
+			        </div>
+			        <div class = "header__boton-menu">
+				        <img src="../imagenes/icono-menu.svg">
+			        </div>
+			    </div>
 				</div>
-			</div>
-			<div class="portada-1__seccion-2__imagen-celular">
-				<p>Aquí va la imagen del celular</p>
-			</div>
-			<div class="portada-1__seccion-3">
-				<div class="portada-1__seccion-3-precio">
-					<h2>$ 1.200.000 </h2>
-				</div>
-				<div class="portada-1__seccion-3__botoncomprar">
-					<div>
-						<h3>Comprar</h3>
-					</div>
-				</div>
-				<div class="portada-1__seccion-3__caracteristicas">
-					<div class = "portada-1__seccion-3__caracteristicas-desplegable">
-						<select>
-		                    
-                            <optgroup label="Procesador:"disabled> 
-                            	<option>Qualcomm® Snapdragon™ 732G"</option></optgroup>
-                            <optgroup label ="Almacenamiento y RAM:" disabled>
-                            	<option><p>RAM: 6  Almacenamiento: 64 GB / 128 GB"</p></option>
-                            </optgroup>
-                            <optgroup label ="Pantalla:" disabled>
-                            	<option>6.67" DotDisplay</option>
-                            </optgroup>
-                            <optgroup label="Procesador:"disabled> 
-                            	<option>Qualcomm® Snapdragon™ 732G"</option></optgroup>
-                            <optgroup label ="Almacenamiento y RAM:" disabled>
-                            	<option><p>RAM: 6  Almacenamiento: 64 GB / 128 GB"</p></option>
-                            </optgroup>
-                            <optgroup label ="Pantalla:" disabled>
-                            	<option>6.67" DotDisplay</option>
-                            </optgroup>
+				<div class="header-no-responsive" id="inicio">
+					<div class="header-logo__logo"><img src="../imagenes/logo.jpg"></div>
+			            <ul class="ul">
+				            <li><a href="#inicio"><button name="inicio"><p>Inicio</p></button></a></li>
+				            <li><a href ="#catalogo"><button name="Figuras"><p>Catálogo</p></button></a></li>
+				            <li><a href ="#sobre-nosotros"><button name="sobre-nosotros"><p>Sobre nosotros</p></button></a></li>
+			            </ul>
 
-
-                      </select>
-						<h3>Características</h3>
-					</div>
-					
 				</div>
-			</div>
+				
+			</nav>
 			
+		</header>
+	<main>
+		<div class="imagen-inicio">
+			<img src="../imagenes/imagen-inicio.jpg">
 		</div>
+		
 		<div class="encabezado-seccion-catalogo">
 			<h2>Accede a nuestro catálogo</h2>
 		</div>
-		<div class="catalogo">
-			<div class="catalogo__imagen-con-boton">
-				<img src="../imagenes/mostrar-catalogo.jpg">
-				<div class="catalogo__boton"><p>MIRAR CATÁLOGO</p></div>
-				<!--<div class="catalogo__boton-contenedor">-->
-					
-				  
-			  </div>
+		<div class="catalogo" id="catalogo">
+			<div class="catalogo__contenedor-imagen">
+				<img src="../imagenes/mostrar-catalogo.jpg">  
 			</div>
-			
-			
-			
-		</div>
+			<div class="contenedor-boton">
+				<a href="javascript:ventana_catalogo('../html/seccion-catalogo.html')">
+					<div class="elemento-boton">
+            <p>MIRAR CATÁLOGO</p>
+        </div>
+      </a>
+			</div>
+	  </div>
 	</main>
-	<footer>
+	<footer id="sobre-nosotros">
 		<div class="footer-titulo">
 			<h2>Sobre nosotros</h2>
 		</div>
@@ -120,6 +89,6 @@
 		</div>
 	</footer>
 	
-
+ <script type="javascript" src="../javascript/index.js"></script>
 </body>
 </html>

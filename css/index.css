@@ -1,15 +1,21 @@
 * {
     font-family: 'Montserrat', sans-serif;
-
 }
-@media only screen and (max-width: 500px) {
-	header.header{
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+    header nav .header-no-responsive {
+        display: none;
+    }
+	header nav .header-responsive{
 	display: grid;
 	grid-template-columns: 50% 50%;
     grid-auto-rows: 100%;
 	align-items: center;
 	background-color: white; 
-	height: 13vw;
+	height: 10vh;
 	padding: 1%;
 	z-index: 30;
     }
@@ -19,13 +25,13 @@
     	width: auto;
 	    height: auto;
     }
-    .header__botones{
+    header nav .header-responsive .header__botones{
     	display: grid;
     	grid-template-columns: auto auto;
     	justify-content: end;
 
     }
-    .header__logo {
+    header nav .header-responsive .header__logo {
     	display: grid;
         height: 4,3%;
     }
@@ -40,27 +46,17 @@
         height: 100%;
         object-fit: cover;
     }
-    .principal {
-	background-color: black; 
-	width: 100%;
-	height: 80%;
-	z-index: 10;
-	color: white; 
-
-    }
-    .productos-destacados, .seccion-catalogo{
+    .seccion-catalogo{
         display: grid;
-        min-height: 5%;
+        min-height: 5vh;
         align-items: center;
         justify-content: center;
     }
     .portada-1{
     	display: grid;
-    	grid-template-rows: 8vh 55vh 35vw;
+    	grid-template-rows: 6vh 54vh 25vh;
     	padding: 3vw;
     	background-color: #a0aed7;
-    	width: 100%;
-    	height: 91%;
     }
     .portada-1__seccion-1{
     	display: grid;
@@ -88,13 +84,12 @@
     }
     .portada-1__seccion-3__botoncomprar div {
     	display: grid;
-    	height: 47px;
-    	width: 126px;
+    	height: 10vh;
+    	width: 42vw;
     	align-items: center;
     	background-color: black;
     	color: white;
     	text-align: center;
-    	background-color: black;
     	border-radius:12.5vw;
 
     }
@@ -127,88 +122,215 @@
     }
     optgroup {
         width: 100%;
-        background-color: #ca4e4e;
+        
         color: black;
     }
-    .catalogo {
-        display: grid;
-        align-items: center;
-        width: 100%;
-        height: 90%;
-    }
     .encabezado-seccion-catalogo{
-        padding: 20px;
         display: grid;
         align-items: center;
         justify-content: center;
-        height: 10%;
+        min-height: 10vh;
+        font-size: .8em;
     }
-    .catalogo__imagen-con-boton {
-        display: grid;
-        align-items: center;
-        min-height: 35%;
-        justify-content: center;
+    .catalogo {
+        width: 100vw;
+        height: 90vh;
     }
-    .catalogo__imagen-con-boton img {
+    .catalogo__contenedor-imagen {
+        width: 100vw;
+        height: 90vh;
+        position: absolute;
+    }
+    .catalogo__contenedor-imagen img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        z-index: 50;
-        position: relative;
-
+        object-position: 42%;
     }
-
-  /*  .catalogo__imagen {
-        display: grid;
-  
-    
-    /*
-    background-color: red;
-    width:100%;
-    height: 40%;
-    justify-content: center;
-    border-radius: 0px;
-    padding: 0px;
-    border: none;
-    color: #fff;
-        
-        
-    }*/
-    .catalogo__boton-contenedor {
+    .contenedor-boton {
+        width: 100vw;
+        height: 90vh;
+        background-color: transparent;
         display: grid;
         grid-template-rows: 100%;
-        align-items: center;
+        align-items: end;
         justify-content: center;
-        position: inherit;
-        z-index: 60;
-        padding: 5%;
-
+        padding-bottom: 10vh;
+        position: absolute;
     }
-    .catalogo__boton {
-
+    .elemento-boton {
         display: grid;
-        height: 47px;
-        width: 126px;
+        height: 10vh;
+        width: 50vw;
         align-items: center;
         color: white;
         text-align: center;
         background-color: black;
         border-radius:12.5vw;
         justify-content: center;
-        position: absolute;
-        z-index: 60;
-        margin: 52% 35% 5% 35%;
-
-
     }
-    .catalogo__imagen {
+    .elemento-boton p{
+        font-size: 5vw;
 
-        background-color: red;
-        width: 100%;
-        height: 100%;
     }
     footer {
         display: grid;
-        grid-template-rows: 10% 18% 33% 38%;
+        grid-template-rows: 10vh 18vh 33vh 39vh;
         height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-titulo {
+        display: grid;
+
+        min-height: 10vh;
+        text-align: center;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-icono-contenedor, .footer-logo-universidad-contenedor {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-icono{
+        display: flex;
+        justify-content: center;
+        min-height: 18vh;
+    }
+    .footer-logo-universidad {
+        display: flex;
+        justify-content: center;
+        height: 48vw;
+    }
+    /*.footer-icono {
+        width: 27vw;
+    }*/
+    .footer-icono img{
+        min-height: 18vh;
+        min-width: 18vw;
+        object-fit: contain;
+    }
+    .footer-texto {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 4%;
+        min-height: 33vh;
+    }
+
+}/*hasta aca termina la media qr*/
+@media only screen and (min-width: 575px) {
+    .header-responsive{
+        display: none;
+    }
+    .header-no-responsive{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: .5vh;
+        width: 100%;
+        min-height: 10vh;
+        position: sticky;
+        top: .00000000001px;
+        opacity: .93;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-logo__logo {
+    width: 15vw;
+    margin: 7.5px 7.5px 7.5px 10px;
+    }
+    .header-logo__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10%;
+    }
+    .ul {
+
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    li {
+        margin: 7px;
+    }
+    li a button p {
+        font-size: 2em;
+    }
+    li a button {
+        border: none;
+        border-radius: 12.5vw;
+        padding: 5px;
+        background: white;
+    }   
+    li button:hover {
+    transition: .3s;
+    background-color: black;
+    color: white;
+    }
+    .imagen-inicio {
+        min-height: 80vh;
+    } 
+    .imagen-inicio img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 20% 20%;
+    }
+
+    .encabezado-seccion-catalogo{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        min-height: 10%;
+        font-size: 1.8em;
+    }
+    .catalogo {
+        width: 100vw;
+        min-height: 90vh;
+    }
+    .catalogo__contenedor-imagen {
+        width: 100vw;
+        height: 90vh;
+        position: absolute;
+    }
+    .catalogo__contenedor-imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .contenedor-boton {
+        width: 100vw;
+        height: 90vh;
+        background-color: transparent;
+        display: grid;
+        grid-template-rows: 100%;
+        align-items: end;
+        justify-content: center;
+        padding: 0vh 0vh 10vh 0vh;
+        position: absolute;
+    }
+    .elemento-boton {
+        display: grid;
+        height: auto;
+        width: 50vw;
+        align-items: center;
+        color: white;
+        text-align: center;
+        background-color: black;
+        border-radius:12.5vw;
+        justify-content: center;
+    }
+    .elemento-boton p{
+        font-size: 5vw;
+
+    }
+    footer {
+        display: grid;
+        /*grid-template-rows: 10vh 20vh 33vh 37vh;*/
         justify-content: center;
         text-align: center;
     }
@@ -219,26 +341,59 @@
         padding: 10px;
         align-items: center;
         justify-content: center;
+        font-size: 1.8em;
+        min-height: 10vh;
     }
-    .footer-icono-contenedor, .footer-logo-universidad-contenedor {
+    .footer-icono-contenedor{
         display: grid;
         justify-content: center;
         align-items: center;
+        min-height: 20vh;
         
     }
-
     .footer-icono {
-        width: 20vw;
+        display: flex;
+        justify-content: center;
+        height: 17vh;
+        width: 15vw;
+    }
+
+    .footer-icono img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
     .footer-texto {
         display: grid;
         justify-content: center;
         align-items: center;
         padding: 4%;
+        font-size: 1.5em;
+        min-height: 33vh;
+    }
+    .footer-logo-universidad-contenedor {
+        padding: 10px;
+        display: grid;
+        justify-content: center;
+        min-height: 37vh;
+        max-height: 37vh;
+        
+
     }
     .footer-logo-universidad {
-        width: 30vw;
+        display: flex;
+        justify-content: center;
+        height: 51.5%;
     }
+      
+    .footer-logo-universidad img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
 
-       
+    }
+    
+
+
 }
+    

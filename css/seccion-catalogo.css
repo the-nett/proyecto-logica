@@ -1,0 +1,162 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.marca {
+    display: grid;
+    padding: .5vh;
+    width: 100%;
+    min-height: 3vh;
+    top: .00000000001px;
+    opacity: .93;
+    align-items: center;
+    justify-content: center;
+}
+.marca__logo {
+    height: 5vh;
+    padding: 5px;
+}
+.marca__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.contenedor-productos-samsung, .contenedor-productos-apple, .contenedor-productos-huawei{
+  display: grid;
+  padding: 2vh 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1rem;
+}
+.portada-articulo{ 
+    display: grid;
+    grid-template-rows: 3vh 18vh 4vh 4vh;
+    justify-content: center;
+    background-color: #cdcdea;
+    border-radius: 10%;
+     min-height: 30vh;
+
+    padding-top: 1vh;
+
+}
+.imagen-articulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.precio {
+    height: 18px;
+}
+.portada-articulo__nombre-celular, h3 {
+    font-size: 1.6vh;
+    font-weight: bold; 
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+.imagen-articulo {
+    width: 100%;
+    height: 100%;
+}
+
+.precio-y-boton {
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 1vw;
+}
+.boton-comprar {
+    width: 4vw;
+    height: 2vh;
+
+
+
+}
+.product__card{
+  display: grid;
+  position: relative;
+}
+
+.product__img{
+  position: relative;
+  width: 120px;
+  justify-self: center;
+  margin-bottom: var(--mb-0-75);
+  transition: .3s;
+}
+
+.product__title, .product__price{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.product__title{
+  margin-bottom: .25rem;
+}
+
+.button-flex-product__button{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: .25rem;
+  border-radius: .35rem;
+  font-size: 1.15rem;
+}
+
+.product__button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.product__circle{
+  width: 90px;
+  height: 90px;
+  background-color: var(--first-color-lighten);
+  border-radius: 50%;
+  position: absolute;
+  top: 18%;
+  left: 5%;
+}
+
+.product__card:hover .product__img{
+  transform: translateY(-.5rem);
+}
+    
+    
+    .portada-1__seccion-3{
+
+    display: grid;
+    padding: 5px;
+    grid-template-rows: auto auto auto;
+    } 
+.portada-1__seccion-3__caracteristicas-desplegable {
+    align-items: center;
+}
+    .portada-1__seccion-3__caracteristicas {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        padding: 5px;
+
+    }
+    .portada-1__seccion-3__caracteristicas h3 {
+        display: inline;
+        text-decoration: underline;
+        z-index: 10;
+        position: relative;
+    }
+    select {
+        width: 26vw;
+        position: absolute;
+        appearance: none;
+        opacity: 0;
+        border-color: none;
+        z-index: 20;
+    }
+    optgroup {
+        width: 100%;
+        
+        color: black;
+    }
