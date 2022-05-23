@@ -34,34 +34,25 @@ header nav .header-responsive{
       height: 100%;
       object-fit: cover;
   }
-    .slide {
-display: none;
-position: absolute;
-top: 0;
-right: 0;
-transition: all 0.5s;
-min-height: 40vh;
-z-index: 30;
-margin-top: 10vh;
-background-color: white;
-min-width: 40vw;
+  .slide {
+  position: absolute;
+  background: var(--mainWhite);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  width: 40wv;
+  height: 40vh;
+  z-index: 30;
+  margin-top: 10vh;
+  background-color: darkred;
   }
   .show-slide {
-  width: 8rem;
-  padding: 5px;
+  width: 18rem;
+  padding: 2rem 1.5rem;
   transform: rotateY(-360deg);
-  display: block;
-  transition: all 0.5s;
 }
-.show-slide div {
-    margin-top: 2vh;
-}
-.costo {
-  display: inline;
-}
-.tarjeta {
-  background-color: #e5e3e3;
-}  
+  
 @media only screen and (max-width: 575px) {
   .marca {
     display: grid;

@@ -1,5 +1,11 @@
 
-function ventana_catalogo() {
-	window.open("https://htmlpreview.github.io/?https://github.com/the-nett/proyecto-logica/blob/masterhtml/seccion-catalogo.html" , "ventana1");
-}
+(function(){
+	const menu = document.getElementById('boton-menu');
+	const slide = document.getElementById('slide');
+
+	menu.addEventListener('click', function(){
+		slide.classList.toggle('show-slide');
+	});
+
+})();
 
