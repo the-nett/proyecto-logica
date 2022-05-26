@@ -23,17 +23,14 @@ nav {
     .slide {
 display: none;
 position: absolute;
-background: var(--mainWhite);
 top: 0;
 right: 0;
 transition: all 0.3s ease-in-out;
 width: 0;
 width: 40wv;
-height: 40vh;
 z-index: 30;
 margin-top: 10vh;
 background-color: #99a5b3;
-opacity: .7;
   }
   .show-slide {
   width: 8rem;
@@ -275,7 +272,6 @@ opacity: .7;
         width: 100%;
         min-height: 10vh;
         position: sticky;
-        top: .00000000001px;
         opacity: .93;
         align-items: center;
         justify-content: space-between;

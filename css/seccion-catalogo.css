@@ -10,7 +10,8 @@ header nav .header-responsive{
   background-color: white; 
   height: 10vh;
   padding: 1%;
-  z-index: 30;
+  z-index: 100;
+  position: sticky;
     }
   header nav .header-responsive .header__botones{
     display: grid;
@@ -53,9 +54,7 @@ min-width: 40vw;
   display: block;
   transition: all 0.5s;
 }
-.show-slide div {
-    margin-top: 2vh;
-}
+
 .costo {
   display: inline;
 }
@@ -282,4 +281,15 @@ min-width: 40vw;
         
         color: black;
     }
+}
+nav {
+  position: sticky;
+    top: 1e-11px;
+    z-index: 90;
+}
+header {
+  position: sticky;
+    top: 1e-11px;
+    z-index: 100;
+    z-index: 80;
 }
