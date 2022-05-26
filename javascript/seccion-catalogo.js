@@ -127,6 +127,6 @@ document.getElementById('calc').addEventListener('click', function(event){
     	
     },0)
     //console.log(compra_total);
-	alert('Subtotal:          Cop   $'+ monto_total +'\n' + 'Iva:                   Cop     $' + iva_total  + '\n' + 'Precio total:     Cop   $' + compra_total );
+	alert('Subtotal:          Cop   $'+ monto_total +'\n' + 'Iva:                    Cop     $' + iva_total  + '\n' + 'Precio total:     Cop   $' + compra_total );
 
 });
