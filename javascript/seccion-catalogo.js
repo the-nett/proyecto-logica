@@ -28,7 +28,7 @@ class usuario{
 		       <div class = "tarjeta">
 		            <div class="cuerpo_lista" id ="cuerpolista">
                       <strong>Producto</strong>: ${producto.nombre}<br>
-                      <strong>Precio</strong >: <div class="costo">${producto.precio}</div>
+                      <strong>Precio</strong >: $ <div class="costo">${producto.precio}</div>
                       <button name = "borrar" type = "button">Eliminar</button>
 		            </div>
 
@@ -127,6 +127,6 @@ document.getElementById('calc').addEventListener('click', function(event){
     	
     },0)
     //console.log(compra_total);
-	alert('Subtotal:          Cop   '+ monto_total +'\n' + 'Iva:                   Cop   '+ iva_total  + '\n' + 'Precio total:     Cop   ' + compra_total );
+	alert('Subtotal:          Cop   $'+ monto_total +'\n' + 'Iva:                   Cop     $' + iva_total  + '\n' + 'Precio total:     Cop   $' + compra_total );
 
 });
